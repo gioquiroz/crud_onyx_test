@@ -1,0 +1,50 @@
+:root {
+    --gray1: #CCCCCC;
+    --blue1: #1d2c50;
+    --blue2: #0d6efd;
+    --blue3: #ebf1f1;    
+    --white: #FFFFFF;
+    --red1: #dc3545;
+}
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kanit', sans-serif!important;
+}
+table thead tr th, tbody tr th  {
+    border: 1px solid var(--gray1);
+}
+table thead tr th {
+    color: var(--blue1);
+}
+tbody tr > th {
+    font-weight: 400;
+}
+.col-btn {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 10px 0!important;
+}
+tbody tr th .main-btn-crud {
+    text-decoration: none;
+    color: var(--white);
+    width: 100px!important;
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 20px;
+    margin: auto;
+}
+tbody tr th:first-child {
+    font-weight: 800;
+}
+tbody tr th .main-btn-crud.edit {
+    background-color: var(--blue2);
+}
+tbody tr th .main-btn-crud.delete {
+    background-color: var(--red1);
+}
